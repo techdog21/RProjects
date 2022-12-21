@@ -11,7 +11,7 @@ tail(df)
 # write data to email.txt so we have all emails.
 write.table(df,"email.txt",sep="\t",row.names = FALSE, quote=FALSE)
 # remove email domain for user list
-df$Data <- gsub('@nksfb.com',"",df$Data)
+df$Data <- gsub('@email.com',"",df$Data)
 # tail that so we can audit results
 tail(df)
 # pull out unique usernames
